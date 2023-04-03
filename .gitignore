@@ -1,6 +1,5 @@
 .xmake/
 build/
-target/debug/
 Cargo.lock
-target/CACHEDIR.TAG
-target/.rustc_info.json
+target/
+
