@@ -15,7 +15,7 @@ use tokio::time::sleep;
 
 static HASHMAP: Lazy<HashMap<i32, String>> = Lazy::new(|| {
     let app_data: Application;
-    let filename = "examples/config/config.yaml";
+    let filename = "config/config.yaml";
     let mut m = HashMap::new();
     match File::open(filename) {
         Ok(mut file) => {
@@ -104,7 +104,7 @@ struct NetCfg {
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
-    log4rs::init_file("examples/config/log.yaml", Default::default()).unwrap();
+    log4rs::init_file("config/log.yaml", Default::default()).unwrap();
     let version: String = "0.3.1102".to_string();
     trace!("some trace log");
     debug!("some debug log");
