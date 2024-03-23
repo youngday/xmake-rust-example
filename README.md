@@ -1,5 +1,7 @@
 # xmake-rust-example
-xmake rust project 
+
+## NOTE: now ,we need not xmake ,achived. please back easy_example project.
+ 
 
 ## reference
 
